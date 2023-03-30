@@ -5,8 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>grid-3</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+        }
+
+        .container > div {
+            background: #eee;
+            padding: 1em;
+        }
+
+        .container > div:nth-child(2n-1){
+            background: #ccc;
+        }
+    </style>
 </head>
 <body>
-    
+    <!-- .container>.box-${doboz $}*4 -->
+    <div class="container">
+        <div class="box-1">doboz 1</div>
+        <div class="box-2">doboz 2</div>
+        <div class="box-3">doboz 3</div>
+        <div class="box-4">doboz 4</div>
+    </div>
 </body>
 </html>
